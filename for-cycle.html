@@ -7,7 +7,16 @@
   <title>Document</title>
 </head>
 <body>
-    <script src="app.js"></script>
+    <script>
+        let i = 0;
+        ///++ tähendab + 1
+        for(let j = 0; j <= 10; j = j + 1){
+            for(let i = 0; i <= 10; i = i + j) {
+                const result = i*j;
+                console.log( j + " * " + i + " = " + result);
+            }
+            console.log("---------------")
+        }
     </script>
 </body>
 </html>
