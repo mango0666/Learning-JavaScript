@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Kivi - Paber - Käärid By mango0666</title>
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let player1 = prompt("Mängija 1: Kivi, paber, käärid?");
+    let player2 = prompt("Mängija 2: Kivi, paber, käärid?");
+    if (player1 === player2) {
+        alert("Viik!")
+    } else if ((player1 === "paber" || "Paber") && (player2 === "kivi" || "Kivi") || //paber vs kivi (paper beats rock)
+    (player1 === "kivi" || "Kivi") && (player2 === "käärid" || "Käärid") || //kivi vs käärid (rock beats scissors)
+    (player1 === "käärid" || "Käärid") && (player2 === "paber" || "Paber")) { //käärid vs paber (scissors beat paper)
+        alert("Mängija 1 võitis!");
+    } else {
+        alert("Mängija 2 võitis!");
+    }
+  </script>
+</body>
+</html>
